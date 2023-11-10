@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promociones_imars",
+  "info": {
+    "singularName": "promociones-imar",
+    "pluralName": "promociones-imars",
+    "displayName": "Promociones Imar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Fecha_de_caducacion": {
+      "type": "date",
+      "required": true
+    },
+    "Estado_activo": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Promocion": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Descripcion": {
+      "type": "string",
+      "private": true
+    }
+  }
+}
